@@ -1,17 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Home from '../components/home/Home.astro'
 import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 ---
 
 <Layout title="Fede Chaves Developer.">
-	<Header />
-	<Footer />
+	<Header client:idle/>
+	<main class="main">
+		<Home />
+	</main>
 </Layout>
 
 <style>
-	main {
-		
-	}
-	
+ .main {
+	display: block;
+	height: 500px;
+ }
 </style>

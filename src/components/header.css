@@ -7,6 +7,13 @@
     background-color: var(--body-color);
 }
 
+.container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
 .nav {
     height: calc(var(--header-height) + 1.5rem);
     display: flex;

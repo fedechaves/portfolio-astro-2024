@@ -3,7 +3,7 @@ import './header.css'
 let Toggle = false;
 ---
 <header class="header">
-    <nav class="nav container">
+    <nav class="container nav">
       <a href="/" class="nav__logo">
         Fedecha
       </a>
@@ -72,16 +72,16 @@ let Toggle = false;
   </header>
 
   <script>
-    globalThis.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
-    //when the scroll is higher than 200 viewport height,
-    //add the scroll-header class to a tag with the header tag
-    if (this.scrollY >= 80) header?.classList.add("scroll-header")
-    else header?.classList.remove("scroll-header");
-    });
+    // globalThis.getElementById().addEventListener("scroll", function () {
+    // const header = document.querySelector(".header");
+    // //when the scroll is higher than 200 viewport height,
+    // //add the scroll-header class to a tag with the header tag
+    // if (this.scrollY >= 80) header?.classList.add("scroll-header")
+    // else header?.classList.remove("scroll-header");
+    // });
 
-    globalThis.addEventListener("click", () => {
-      return !Toggle
-    })
+    // globalThis.addEventListener("click", () => {
+    //   return !Toggle
+    // })
   
 </script>
